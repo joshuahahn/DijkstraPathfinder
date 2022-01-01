@@ -1,4 +1,4 @@
-public class Edge {
+public class Edge implements Comparable<Edge> {
 
     public Vertex source;
     public Vertex target;
@@ -16,5 +16,14 @@ public class Edge {
         this.source = source;
         this.target = target;
         this.distance = distance;
+    }
+
+    public int compareTo(Edge e) {
+        if (this.distance > e.distance) {
+            return 1;
+        } else if (this.distance < e.distance) {
+            return -1;
+        }
+        return 0;
     }
 }
