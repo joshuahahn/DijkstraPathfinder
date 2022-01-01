@@ -1,0 +1,11 @@
+commit c4ddf110dd69fdab08ce36bcee9f25fa2d535a0e
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Sat Jan 1 22:04:55 2022 +0900
+
+    File IO complete
+
+commit 87f09ee2201527b29f4a620fc933df4e777c7722
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Sat Jan 1 21:46:54 2022 +0900
+
+    Initialize files
