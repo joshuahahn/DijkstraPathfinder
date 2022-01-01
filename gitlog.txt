@@ -1,3 +1,63 @@
+commit f232ad9496b8daddb8846813e9728926e1c5d7e9
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Sat Jan 1 22:42:35 2022 +0900
+
+    Commented TODOs.
+
+commit 0dc405808846b564a22d73a4437d9476a99d1084
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Sat Jan 1 22:38:21 2022 +0900
+
+    Graph initialization complete
+
+commit 77108466bd3c5a0f57bcf7e21f82b0e53a0c85b6
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Sat Jan 1 22:30:58 2022 +0900
+
+    getVertices()
+
+commit 7c9091931e9acb0864693df86f944a52286c4c17
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Sat Jan 1 22:24:23 2022 +0900
+
+    Graph can now add vertices
+
+commit afed4313a656f5f536031c6d01fa73bb725671de
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Sat Jan 1 22:21:51 2022 +0900
+
+    Graph constructor
+
+commit 5aca67228e36c8b149bceb6c629ea2f864923c1f
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Sat Jan 1 22:20:21 2022 +0900
+
+    addEdge created
+
+commit 3f35863af51d8aebf55422f64e3d10dd2ba23587
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Sat Jan 1 22:15:24 2022 +0900
+
+    Edge is now comparalble
+
+commit 11560865ca2de8622f21097a885808c2df3a75f8
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Sat Jan 1 22:12:41 2022 +0900
+
+    Edge fields and construcotrs complete
+
+commit 296963bb6df749cf2bede9f6b226cd79cb3c7ea9
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Sat Jan 1 22:10:18 2022 +0900
+
+    Fields and constructor outlined
+
+commit c1c6947f9d7a302b58da6e78e3926b12903a234d
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Sat Jan 1 22:06:48 2022 +0900
+
+    Created gitlog
+
 commit c4ddf110dd69fdab08ce36bcee9f25fa2d535a0e
 Author: Joshua Hahn <joshua.hahnjy@gmail.com>
 Date:   Sat Jan 1 22:04:55 2022 +0900
