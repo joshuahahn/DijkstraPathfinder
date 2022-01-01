@@ -6,6 +6,9 @@ public class Main {
 
     public static void main(String[] args) {
 
+        // Initialize graph
+        Graph graph = new Graph();
+
         /*
          * / Read in data and create appropriate vertices and edges.
          * / File format (expected name: "input.txt"):
