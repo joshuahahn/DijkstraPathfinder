@@ -63,5 +63,17 @@ public class Main {
             System.out.println("Input file has incorrectly formatted costs.");
         }
 
+        // Prompt user to enter a source and target they wish to
+        // find the shortest distance between.
+
+        // TODO: Run a while loop. Dijkstra should be a helper function.
+
+        // Calculate Dijkstra
+
+        // TODO
+
+        // Print out results
+
+        // TODO
     }
 }
