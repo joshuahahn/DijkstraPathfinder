@@ -15,4 +15,9 @@ public class Vertex {
         this.adjacent = new LinkedList<Edge>();
     }
 
+    // Add a new edge
+    public void addEdge(Edge e) {
+        adjacent.add(e);
+    }
+
 }
