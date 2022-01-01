@@ -2,7 +2,7 @@ import java.util.HashSet;
 
 public class Graph {
 
-    HashSet<Vertex> vertices;
+    private HashSet<Vertex> vertices;
 
     // Default constructor
     public Graph() {
@@ -12,6 +12,11 @@ public class Graph {
     // Add a vertex to the graph
     public void addVertex(Vertex v) {
         vertices.add(v);
+    }
+
+    // Vertices getter function
+    public HashSet<Vertex> getVertices() {
+        return vertices;
     }
 
 }
