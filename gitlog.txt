@@ -1,3 +1,39 @@
+commit 9de5bb4be4b4abb3d235de95062432b66e4ed3b6
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Sun Jan 2 11:13:49 2022 +0900
+
+    doDijkstra progress
+
+commit fb6897c48a18d66ffd27e22d09965b9127c2ea78
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Sun Jan 2 11:13:22 2022 +0900
+
+    CostVertex is now comparable
+
+commit 73f21af5835f50077b482174b269230de7da1f24
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Sun Jan 2 11:11:50 2022 +0900
+
+    CostVertex constructor
+
+commit b8c54adb511efcfe180fa46ae860ef668c33c753
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Sun Jan 2 11:09:04 2022 +0900
+
+    init CostVertex.java
+
+commit edb7e993028212658a52d39de43c942560b62d94
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Sun Jan 2 10:50:30 2022 +0900
+
+    doDIjkstra created
+
+commit c1c4ab8e6c46e7a6516fcf717c1c391c7de0094a
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Sat Jan 1 22:43:55 2022 +0900
+
+    Updated gitlog.
+
 commit f232ad9496b8daddb8846813e9728926e1c5d7e9
 Author: Joshua Hahn <joshua.hahnjy@gmail.com>
 Date:   Sat Jan 1 22:42:35 2022 +0900
