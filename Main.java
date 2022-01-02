@@ -1,6 +1,7 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
+import java.util.PriorityQueue;
 
 public class Main {
 
@@ -79,6 +80,16 @@ public class Main {
      * / @return A formatted string of the cities in order and the total cost.
      */
     public String doDijkstra(Graph graph, Vertex source, Vertex target) {
+
+        // Step 1: Annotate all vertices with appropriate annotations
+        for (Vertex v : graph.getVertices()) {
+            v.cost = Double.POSITIVE_INFINITY;
+            v.visited = false;
+            v.backpointer = null;
+        }
+
+        // Step 2: Iterate through all edges until all vertices are found.
+
         return " ";
     }
 }
