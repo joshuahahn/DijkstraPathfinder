@@ -69,11 +69,16 @@ public class Main {
         // TODO: Run a while loop. Dijkstra should be a helper function.
 
         // Calculate Dijkstra
+    }
 
-        // TODO
-
-        // Print out results
-
-        // TODO
+    /*
+     * / Returns the list of cities to travel to in order, as well as total cost.
+     * / @param graph The graph to run Dijkstra's algorithm on
+     * / @param source The source vertex.
+     * / @param target The target vertex.
+     * / @return A formatted string of the cities in order and the total cost.
+     */
+    public String doDijkstra(Graph graph, Vertex source, Vertex target) {
+        return " ";
     }
 }
