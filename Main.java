@@ -61,9 +61,9 @@ public class Main {
             System.out.println("Input file should be named 'input.txt'. File not found.");
         }
 
-        catch (NumberFormatException e) {
-            System.out.println("Input file has incorrectly formatted costs.");
-        }
+        // catch (NumberFormatException e) {
+        // System.out.println("Input file has incorrectly formatted costs.");
+        // }
 
         // Take input from user.
         Scanner sc = new Scanner(System.in);
@@ -186,7 +186,6 @@ public class Main {
         }
 
         int idx = stack.size() - 1;
-        result.clear();
 
         String resultString = source.name;
 
@@ -195,8 +194,6 @@ public class Main {
 
             resultString += (" " + stack.get(idx).target.name);
         }
-
-        // Add edges to the final return string.
 
         return resultString;
     }
