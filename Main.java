@@ -65,6 +65,15 @@ public class Main {
             System.out.println("Input file has incorrectly formatted costs.");
         }
 
+        // Take input from user.
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter the source.");
+        String sourceName = sc.nextLine();
+        System.out.println("Please enter the target.");
+        String targetName = sc.nextLine();
+
+        boolean validSourceTarget = 
+
         // Prompt user to enter a source and target they wish to
         // find the shortest distance between.
 
@@ -179,5 +188,15 @@ public class Main {
         // Add edges to the final return string.
 
         return resultString;
+    }
+
+    /*
+     * / @param graph The graph to check validity on.
+     * / @param source The name of the source Vertex.
+     * / @param target The name of the target Vertex.
+     * / @return True if source & target are valid, return false otherwise.
+     */
+    public boolean checkValid(Graph graph, String source, String target) {
+        return (graph.getVertices().containsKey(source) && graph.getVertices().containsKey(target));
     }
 }
