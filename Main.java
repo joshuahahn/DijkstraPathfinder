@@ -82,13 +82,59 @@ public class Main {
     public String doDijkstra(Graph graph, Vertex source, Vertex target) {
 
         // Step 1: Annotate all vertices with appropriate annotations
-        for (Vertex v : graph.getVertices()) {
+        for (Vertex v : graph.getVertices().values()) {
             v.cost = Double.POSITIVE_INFINITY;
             v.visited = false;
             v.backpointer = null;
         }
 
         // Step 2: Iterate through all edges until all vertices are found.
+        PriorityQueue<CostVertex> queue = new PriorityQueue<>();
+
+        // Set source cost to 0 and add it to queue.
+        graph.getVertices().get(source.name).cost = 0;
+        CostVertex sourceCV = new CostVertex(source, 0.0);
+        queue.offer(sourceCV);
+
+        // Iterate through highest priority vertex
+        while (queue.size() > 0) {
+
+            // Set current vertex as lowest cost (highest priority) vertex.
+            Vertex current = graph.getVertices().get(queue.poll().name());
+
+            // Set visited to true.
+            current.visited = true;
+
+            // Iterate through all neighbors of current.
+            for (Edge edge : current.getEdges()) {
+
+                // Declare neighbor vertex
+                Vertex neighbor = edge.target;
+
+                // If neighbor is not visited yet (never accessed)
+                if (!neighbor.visited) {
+
+                    // Cost to get to neighbor passing through current vertex
+                    double c = current.cost + edge.distance;
+
+                    // If this path is the shortest available path
+                    if (c < neighbor.cost) {
+
+                        // Update values
+                        neighbor.cost = c;
+                        neighbor.backpointer = current;
+
+                        // Add neighbor to the priorityqueue.
+                        CostVertex neighborEntry = new CostVertex(neighbor, c);
+                        queue.offer(neighborEntry);
+                    }
+                }
+
+            }
+
+        }
+
+        // Step 3: Print path from source to target.
 
         return " ";
     }
