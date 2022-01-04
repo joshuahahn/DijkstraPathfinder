@@ -72,14 +72,25 @@ public class Main {
         System.out.println("Please enter the target.");
         String targetName = sc.nextLine();
 
-        boolean validSourceTarget = 
+        boolean validSourceTarget = checkValid(graph, sourceName, targetName);
 
-        // Prompt user to enter a source and target they wish to
-        // find the shortest distance between.
+        // Error handling
+        if (!validSourceTarget)
+            System.out.println("Please enter a valid source & target.");
 
-        // TODO: Run a while loop. Dijkstra should be a helper function.
+        while (validSourceTarget) {
+            // Perform and print out Dijkstra.
+            System.out.println(
+                    doDijkstra(graph, graph.getVertices().get(sourceName), graph.getVertices().get(targetName)));
 
-        // Calculate Dijkstra
+            // Get next input from user.
+            System.out.println("Please enter the source.");
+            sourceName = sc.nextLine();
+            System.out.println("Please enter the target.");
+            targetName = sc.nextLine();
+        }
+
+        sc.close();
     }
 
     /*
@@ -89,7 +100,7 @@ public class Main {
      * / @param target The target vertex.
      * / @return A formatted string of the cities in order and the total cost.
      */
-    public String doDijkstra(Graph graph, Vertex source, Vertex target) {
+    public static String doDijkstra(Graph graph, Vertex source, Vertex target) {
 
         // Step 1: Annotate all vertices with appropriate annotations
         for (Vertex v : graph.getVertices().values()) {
@@ -196,7 +207,7 @@ public class Main {
      * / @param target The name of the target Vertex.
      * / @return True if source & target are valid, return false otherwise.
      */
-    public boolean checkValid(Graph graph, String source, String target) {
+    public static boolean checkValid(Graph graph, String source, String target) {
         return (graph.getVertices().containsKey(source) && graph.getVertices().containsKey(target));
     }
 }
