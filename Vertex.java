@@ -20,4 +20,9 @@ public class Vertex {
         adjacent.add(e);
     }
 
+    // Return neighbors
+    public List<Edge> getEdges() {
+        return adjacent;
+    }
+
 }
