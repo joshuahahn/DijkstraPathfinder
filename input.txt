@@ -1,3 +1,4 @@
+630
 Vancouver Calgary 100.60
 Vancouver Winnipeg 280.02
 Vancouver Montreal 616.12
