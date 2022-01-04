@@ -20,8 +20,8 @@ public class Graph {
     }
 
     // Vertices getter function
-    public Collection<Vertex> getVertices() {
-        return vertices.values();
+    public Map<String, Vertex> getVertices() {
+        return vertices;
     }
 
 }
