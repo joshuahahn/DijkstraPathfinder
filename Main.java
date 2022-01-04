@@ -2,6 +2,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.PriorityQueue;
+import java.util.ArrayList;
 
 public class Main {
 
@@ -39,9 +40,9 @@ public class Main {
                 Vertex sourceV = new Vertex(source);
                 Vertex targetV = new Vertex(target);
 
-                if (!graph.getVertices().contains(sourceV))
+                if (!graph.getVertices().containsKey(sourceV.name))
                     graph.addVertex(sourceV);
-                if (!graph.getVertices().contains(targetV))
+                if (!graph.getVertices().containsKey(targetV.name))
                     graph.addVertex(targetV);
 
                 // Assume all paths are bilateral, add both edges.
@@ -135,7 +136,48 @@ public class Main {
         }
 
         // Step 3: Print path from source to target.
+        ArrayList<Edge> result = new ArrayList<>();
 
-        return " ";
+        // Edge case: source = target
+        if (graph.getVertices().get(source.name) == graph.getVertices().get(target.name)) {
+            return source.name;
+        }
+
+        Vertex current = graph.getVertices().get(source.name);
+
+        // Start from target, then move backwards to source. Flip at the end.
+        while (current.backpointer != null) {
+
+            Vertex previous = current.backpointer;
+
+            // Add edge conncting current to previous to arraylist.
+            Edge newEdge = new Edge(current, previous);
+            result.add(newEdge);
+
+            // Update current
+            current = current.backpointer;
+        }
+
+        // Reverse the arraylist by treating a new arraylist as a stack.
+        ArrayList<Edge> stack = new ArrayList<>();
+
+        for (Edge edge : result) {
+            stack.add(edge);
+        }
+
+        int idx = stack.size() - 1;
+        result.clear();
+
+        String resultString = source.name;
+
+        // Add the edges back in reverse order.
+        while (idx >= 0) {
+
+            resultString += (" " + stack.get(idx).target.name);
+        }
+
+        // Add edges to the final return string.
+
+        return resultString;
     }
 }
