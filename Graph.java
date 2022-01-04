@@ -1,22 +1,27 @@
-import java.util.HashSet;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Graph {
 
-    private HashSet<Vertex> vertices;
+    private Map<String, Vertex> vertices;
 
     // Default constructor
     public Graph() {
-        vertices = new HashSet<Vertex>();
+        vertices = new HashMap<String, Vertex>();
     }
 
     // Add a vertex to the graph
     public void addVertex(Vertex v) {
-        vertices.add(v);
+        if (vertices.containsKey(v.name)) {
+            throw new IllegalArgumentException("Duplicate vertex entry.");
+        }
+        vertices.put(v.name, v);
     }
 
     // Vertices getter function
-    public HashSet<Vertex> getVertices() {
-        return vertices;
+    public Collection<Vertex> getVertices() {
+        return vertices.values();
     }
 
 }
