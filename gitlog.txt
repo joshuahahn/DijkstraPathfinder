@@ -1,3 +1,87 @@
+commit 0e4f100cd4b5628ae7a4606346b9406250084d3a
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Tue Jan 4 22:57:07 2022 +0900
+
+    Reformatted input
+
+commit 0bef6da052aac3d8d0daf267ea1a495bc39ac714
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Tue Jan 4 22:57:03 2022 +0900
+
+    Protyping complete... Have to debug
+
+commit 5c33c2e92d0b33e6c59279d55d5661011cba7b19
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Tue Jan 4 22:45:50 2022 +0900
+
+    Modified input file
+
+commit ed7bd7dabfdb5dee51af0e341e2e5773f5536776
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Tue Jan 4 22:43:54 2022 +0900
+
+    Added input file
+
+commit 2efd9dfcfdb5f4b76c8418c2b8954025e658fdce
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Tue Jan 4 22:26:10 2022 +0900
+
+    Initial programming complete.
+
+commit 59122442f1a567fef17dc16a4aa5c35fbab4f9a8
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Tue Jan 4 22:22:27 2022 +0900
+
+    checkValid complete
+
+commit edf83a6885e0ca39c7f827f475dd94fedcaef30b
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Tue Jan 4 22:18:39 2022 +0900
+
+    Dijkstra to string complete
+
+commit 61f342ab6be5376df6d74df4b2f55b3c752fdc64
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Tue Jan 4 22:09:46 2022 +0900
+
+    Dijkstra implementatin complete
+
+commit 7b46b58072f2fc033cc79eea5469f176b6407d01
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Tue Jan 4 21:51:15 2022 +0900
+
+    getEdges function
+
+commit 7cd910c5c68537b8b898464fecb9a84ab26e27c5
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Tue Jan 4 21:49:40 2022 +0900
+
+    Cleanup
+
+commit 4bd91179882b7d0140a1a997bb7546b66439a035
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Tue Jan 4 21:49:27 2022 +0900
+
+    CostVertex name() function
+
+commit 63f1dd32ff679e8c4751dc9a6f221eb8025fd17c
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Tue Jan 4 21:45:35 2022 +0900
+
+    getVertices() modified
+
+commit 8535d070394d696a522be7cd5c02154f32dc90c7
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Tue Jan 4 19:43:04 2022 +0900
+
+    Change graph from HashSet to HashMap
+
+commit 18e5e074c15ab7251163a468b74ff8592e3188f7
+Author: Joshua Hahn <joshua.hahnjy@gmail.com>
+Date:   Sun Jan 2 11:14:07 2022 +0900
+
+    gitlog.
+
 commit 9de5bb4be4b4abb3d235de95062432b66e4ed3b6
 Author: Joshua Hahn <joshua.hahnjy@gmail.com>
 Date:   Sun Jan 2 11:13:49 2022 +0900
