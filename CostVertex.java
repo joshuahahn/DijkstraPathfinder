@@ -23,4 +23,9 @@ public class CostVertex implements Comparable<CostVertex> {
 
         return 0;
     }
+
+    // Return name
+    public String name() {
+        return vertex.name;
+    }
 }
