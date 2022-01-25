@@ -17,7 +17,7 @@ public class Vertex {
 
     // Add a new edge
     public void addEdge(Edge e) {
-        adjacent.add(e);
+        this.adjacent.add(e);
     }
 
     // Return neighbors

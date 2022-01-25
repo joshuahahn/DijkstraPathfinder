@@ -36,14 +36,29 @@ public class Main {
                 String target = contents[1];
                 Double cost = Double.parseDouble(contents[2]);
 
-                // Create new vertices
-                Vertex sourceV = new Vertex(source);
-                Vertex targetV = new Vertex(target);
+                Vertex sourceV;
+                Vertex targetV;
 
-                if (!graph.getVertices().containsKey(sourceV.name))
+                // If source vertex does not exist in graph yet
+                if (!graph.getVertices().containsKey(source)) {
+                    sourceV = new Vertex(source);
                     graph.addVertex(sourceV);
-                if (!graph.getVertices().containsKey(targetV.name))
+                }
+                // If source vertex already exists in graph.
+                else {
+                    sourceV = graph.getVertices().get(source);
+                }
+
+                // If target vertex does not exist in graph yet
+                if (!graph.getVertices().containsKey(target)) {
+                    targetV = new Vertex(target);
                     graph.addVertex(targetV);
+                }
+
+                // If target vertex already exists in graph.
+                else {
+                    targetV = graph.getVertices().get(source);
+                }
 
                 // Assume all paths are bilateral, add both edges.
                 Edge sourceToTarget = new Edge(sourceV, targetV, cost);
@@ -78,16 +93,11 @@ public class Main {
         if (!validSourceTarget)
             System.out.println("Please enter a valid source & target.");
 
-        while (validSourceTarget) {
+        if (validSourceTarget) {
             // Perform and print out Dijkstra.
             System.out.println(
                     doDijkstra(graph, graph.getVertices().get(sourceName), graph.getVertices().get(targetName)));
 
-            // Get next input from user.
-            System.out.println("Please enter the source.");
-            sourceName = sc.nextLine();
-            System.out.println("Please enter the target.");
-            targetName = sc.nextLine();
         }
 
         sc.close();
@@ -153,6 +163,11 @@ public class Main {
 
             }
 
+        }
+
+        for (Vertex v : graph.getVertices().values()) {
+            System.out.print(v.name + " ");
+            System.out.println(v.cost);
         }
 
         // Step 3: Print path from source to target.
